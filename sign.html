@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d2b9b34885.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        body{
+            background-color: rgb(247,248,249);
+        }
+        .main{
+            width: 400px;
+            height: 620px;
+            border: 0;
+            box-shadow: 2px 4px 8px;
+            margin-left: 400px;
+            top: 20%;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .tt{
+            width: 200px;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+        .face{
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+            background-color: rgb(66,103,178);
+            border: 0;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 6px;
+            width: 300px;
+            height: 40px;
+        }
+        .li{
+            width: 120px;
+            border: 1px solid rgb(188,197,211);
+            line-height: 6px;
+        }
+        .lin{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 60px;
+        }
+        .check{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .btt{
+            width: 300px;
+            border: 0.5px solid rgb(188,197,211);
+        }
+        .sign{
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            margin-left: 100px;
+        }
+        .app{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .app img{
+            color: black;
+        }
+        .hel{
+            margin-left: 180px;
+        }
+        .face1{
+            margin-left: 60px;
+        }
+        .tee{
+            padding: 5px;
+            background-color: white;
+            border: 1px solid rgb(188,197,211);
+            color: rgb(188,197,211);
+            border-radius: 6px;
+            width: 300px;
+            height: 40px;
+            outline: none;
+        }
+        .loo{
+            width: 300px;
+            background-color: rgb(23,114,235);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border: 0;
+            border-radius: 6px;
+            height: 40px;
+        }
+        .ppl{
+            width: 100px;
+            height: 40px;
+        } 
+        .get{
+            width: 100px;
+            height: 40px;
+        }
+        .tee1{
+            margin-left: 50px;
+        }
+        .tee2{
+            margin-left: 50px;
+        }
+        .lit{
+            margin-left: 60px;
+        }
+        .btt1{
+            margin-left: 60px;
+        }
+        .ap{
+            color: rgb(23,114,235);
+        }
+        .in{
+            margin-left: 10px;
+        }
+        .app{
+            margin-left: 80px;
+        }
+        .h1{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 24px;
+        }
+      .bim{
+        color: rgb(188,197,211);
+      }
+      .api{
+        color:  rgb(23,114,235);
+        text-decoration: none;
+      }
+        .teem{
+            align-items: center;
+            display: flex;
+            background-color: white;
+      }
+      .fig{
+            background-color: none;
+            outline: none;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <form class="main">
+        <div>
+            <img class="tt" src="./freelancer-logo.svg" alt="">
+        </div>
+        <div class="hel">
+            <h4 class="hi">Sign Up</h4>
+        </div>
+        <div class="face1">
+            <button class="face"><i class="fa-brands fa-facebook"></i> Log in with Facebook</button>
+        </div>
+        <br>
+        <div class="lin">
+            <div class="li"></div>
+            <span class="ak">OR</span>
+            <div class="li"></div>
+        </div>
+        <br>
+
+        <div class="tee1">
+            <input  class="tee" type="text"  placeholder="Email or Username" required>
+        </div>
+        <br>
+        <br>
+        <div class="tee2">
+            <button class="tee">
+                <input id="password" class="fig" type="password"  required> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <span id="visi"  onclick="toggle()" class="material-symbols-outlined">
+                    visibility_off
+                    </span>
+        
+            </button>
+        </div>
+        <br>
+        <br>
+        <div class="check">
+            <div class="in">
+                <input type="checkbox" required> Agree to the freelancer
+                <a class="ap" href="">User Agreement</a> and
+                <br>
+                &nbsp; &nbsp; &nbsp; <a class="ap" href="">Privacy Policy.</a>
+            </div>     
+        </div>
+        <br>
+        <div class="lit">
+            <button name="join" class="loo">Join Freelancer</button>
+        </div>
+        <br>
+        <div class="btt1">
+            <div class="btt"></div>
+        </div>
+        <br>
+        <div class="sign">
+            <span class="bim">Already have an account?</span>
+            <a class="api" href="">Log in</a>
+        </div>
+        </form>
+</body>
+
+<script>
+    function toggle(){
+    let passwordInput = document.getElementById("password");
+    let visi = document.getElementById("visi")
+     visi.innerHTML == "Visibility"? visi.innerHTML ="visibility_off": visi.innerHTML ="Visibility"
+   if(passwordInput.type === "password"){
+    passwordInput.type = "text";
+   }else{
+    passwordInput.type = "password";
+   }
+}
+</script>
+</html>
